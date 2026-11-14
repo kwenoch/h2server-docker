@@ -20,19 +20,6 @@ if [[ "${ARCH}" == "aarch64" ]]; then
     ARCH="arm64"
 fi
 
-if [[ -z "${STEAM_USERNAME}" ]]; then
-    echo -ne "[ERR]\tSTEAM_USERNAME unset, please add it to your .env\n"
-    exit 1
-else
-    export STEAM_USERNAME
-fi
-if [[ -z "${STEAM_PASSWORD}" ]]; then
-    echo -ne "[ERR]\tSTEAM_PASSWORD unset, please add it to your .env\n"
-    exit 1
-else
-    export STEAM_PASSWORD
-fi
-
 if [[ -z "${H2SERVER_VERSION}" ]]; then
     H2SERVER_VERSION="latest"
     export H2SERVER_VERSION
@@ -66,8 +53,6 @@ tar --exclude='./*.box64' --exclude='./*.proton' -cvf - . | gzip -9 >../payload.
 echo -ne "[INFO]\tBuilding for ${DIST} on ${PLATFORM}\n"
 cd "${SCRIPT_DIR}"
 docker buildx build \
-    --build-arg STEAM_USERNAME="${STEAM_USERNAME}" \
-    --build-arg STEAM_PASSWORD="${STEAM_PASSWORD}" \
     --platform ${PLATFORM} \
     -t ${TAG} . || exit 1
 echo -ne "[INFO]\tSuccess! Tagged as ${TAG}\n"

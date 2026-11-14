@@ -17,16 +17,16 @@ if [[ ! -f "${H2SERVER_BIN}" ]]; then
     exit 1
 fi
 
-usermod -u ${USER_UID:-1000} steam || exit 1
-groupmod -g ${USER_GID:-1000} steam || exit 1
+usermod -u ${USER_UID:-1000} h2server || exit 1
+groupmod -g ${USER_GID:-1000} h2server || exit 1
 
-chown -R steam /home/steam
-chgrp -R steam /home/steam
+chown -R h2server /home/h2server
+chgrp -R h2server /home/h2server
 
-chown -R steam /proton7
-chgrp -R steam /proton7
+chown -R h2server /proton7
+chgrp -R h2server /proton7
 
-chown -R steam /h2server
-chgrp -R steam /h2server
+chown -R h2server /h2server
+chgrp -R h2server /h2server
 
-exec su steam /bin/bash -c '/run_h2server.sh'
+exec su h2server /bin/bash -c '/run_h2server.sh'
