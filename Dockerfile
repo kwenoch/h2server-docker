@@ -34,7 +34,8 @@ RUN /usr/bin/apt update && \
     /usr/bin/mkdir /tmp/payload && \
     /usr/bin/pigz -dc /tmp/payload.tgz | /usr/bin/tar -xvf - -C /tmp/payload && \
     /usr/bin/mv /tmp/payload/entrypoint.sh / && \
-    /usr/bin/mv /tmp/payload/run_h2server.sh / && \
+    /usr/bin/mv /tmp/payload/update_h2server.sh /usr/bin/update_h2server && \
+    /usr/bin/mv /tmp/payload/run_h2server.sh /usr/bin/run_h2server && \
     /usr/bin/mv /tmp/payload/setenv.sh /usr/bin/setdockerenv && \
     . /usr/bin/setdockerenv && \
     /usr/bin/sh -c /tmp/payload/install_deps.sh && \

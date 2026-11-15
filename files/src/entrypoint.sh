@@ -29,4 +29,5 @@ chgrp -R h2server /proton7
 chown -R h2server /h2server
 chgrp -R h2server /h2server
 
-exec su h2server /bin/bash -c '/run_h2server.sh'
+su h2server /bin/bash -c '/usr/bin/update_h2server'
+exec su h2server /bin/bash -c '/usr/bin/run_h2server'
