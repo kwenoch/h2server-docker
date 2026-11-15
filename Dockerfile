@@ -21,9 +21,9 @@ RUN /usr/bin/apt update && \
         debconf \
         file \
         gpg \
-        gzip \
         locales \
         passwd \
+        pigz \
         screen \
         sed \
         tar \
@@ -32,7 +32,7 @@ RUN /usr/bin/apt update && \
     /usr/bin/sed -i -e 's/# en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/' /etc/locale.gen && \
     /usr/sbin/dpkg-reconfigure --frontend=noninteractive locales && \
     /usr/bin/mkdir /tmp/payload && \
-    /usr/bin/tar -xvf /tmp/payload.tgz -C /tmp/payload && \
+    /usr/bin/pigz -dc /tmp/payload.tgz | /usr/bin/tar -xvf - -C /tmp/payload && \
     /usr/bin/mv /tmp/payload/entrypoint.sh / && \
     /usr/bin/mv /tmp/payload/run_h2server.sh / && \
     /usr/bin/mv /tmp/payload/setenv.sh /usr/bin/setdockerenv && \
@@ -44,7 +44,7 @@ RUN /usr/bin/apt update && \
     /usr/sbin/groupadd -g ${USER_GID} h2server && \
     /usr/sbin/useradd -u ${USER_UID} -g ${USER_GID} -m h2server && \
     /usr/bin/mkdir /proton7 && \
-    /usr/bin/tar -xvf "/tmp/payload/proton_dist.tgz" -C /proton7 && \
+    /usr/bin/pigz -dc /tmp/payload/proton_dist.tgz | /usr/bin/tar -xvf - -C /proton7 && \
     /usr/bin/rm -rf /tmp/payload && \
     /usr/bin/rm -f /tmp/*.tgz && \
     /usr/bin/rm -rf /var/lib/apt/lists/*

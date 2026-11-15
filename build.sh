@@ -48,7 +48,11 @@ if [[ ! -f "${SCRIPT_DIR}/files/src/proton_dist.tgz" ]]; then
     exit 1
 fi
 cd "${SCRIPT_DIR}/files/src" && rm -fv ../payload.tgz
-tar --exclude='./*.box64' --exclude='./*.proton' -cvf - . | gzip -9 >../payload.tgz
+if [[ ! -z "$(command -v pigz)" ]]; then
+    tar --exclude='./*.box64' --exclude='./*.proton' -cvf - . | pigz -9 >../payload.tgz
+else
+    tar --exclude='./*.box64' --exclude='./*.proton' -cvf - . | gzip -9 >../payload.tgz
+fi
 
 echo -ne "[INFO]\tBuilding for ${DIST} on ${PLATFORM}\n"
 cd "${SCRIPT_DIR}"

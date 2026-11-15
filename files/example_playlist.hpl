@@ -1,0 +1,954 @@
+[playlist]
+; example_playlist
+shuffle=On
+Pregame Team Selection Delay=5
+Pregame Delay=5
+Postgame Delay=30
+
+[custom variant]
+name=FFA Brawl
+game type=Slayer
+Number Of Rounds = 1 Round
+Round Time Limit = 15 Minutes
+Rounds Reset Map = On
+Resolve Ties = Off
+Max Active Players = 16
+Lives Per Round = Unlimited
+Respawn Time = 5 Seconds
+Suicide Penalty = None
+Shield Type = Normal Shields
+Motion Sensor = On
+Active Camo = Off
+Extra Damage = Off
+Damage Resistance = Off
+Team Play = Off
+Team Scoring = Sum
+Team Changing = On
+Friendly Fire = On
+Respawn Time Modifier = None
+Betrayal Penalty = 5 Seconds
+Force Even Teams = Off
+Vehicle Respawn Time = No Respawn
+Primary Light Vehicle = None
+Secondary Light Vehicle = None
+Primary Heavy Vehicle = None
+Banshee = Off
+Primary Turret = Map Default
+Secondary Turret = Map Default
+Starting Weapon = Random
+Secondary Weapon = Random
+Starting Grenades = On
+Weapons On Map = None
+Weapon Respawn Time = No Respawn
+Grenades On Map = On
+Overshields = On
+Active Camo On Map = On
+Score to Win Round = 25
+Bonus Points = Off
+Suicide Point Loss = On
+Death Point Loss = Off
+
+[custom variant]
+name=FFA BRs
+game type=Slayer
+Number Of Rounds = 1 Round
+Round Time Limit = 15 Minutes
+Rounds Reset Map = On
+Resolve Ties = Off
+Max Active Players = 16
+Lives Per Round = Unlimited
+Respawn Time = 5 Seconds
+Suicide Penalty = None
+Shield Type = Normal Shields
+Motion Sensor = On
+Active Camo = Off
+Extra Damage = Off
+Damage Resistance = Off
+Team Play = Off
+Team Scoring = Sum
+Team Changing = On
+Friendly Fire = On
+Respawn Time Modifier = None
+Betrayal Penalty = 5 Seconds
+Force Even Teams = Off
+Vehicle Respawn Time = No Respawn
+Primary Light Vehicle = None
+Secondary Light Vehicle = None
+Primary Heavy Vehicle = None
+Banshee = Off
+Primary Turret = Map Default
+Secondary Turret = Map Default
+Starting Weapon = Battle Rifle
+Secondary Weapon = Magnum
+Starting Grenades = On
+Weapons On Map = None
+Weapon Respawn Time = No Respawn
+Grenades On Map = On
+Overshields = On
+Active Camo On Map = On
+Score to Win Round = 25
+Bonus Points = Off
+Suicide Point Loss = On
+Death Point Loss = Off
+
+[custom variant]
+name=Team KotH Brawl
+game type=King of the Hill
+Number Of Rounds = 1 Round
+Round Time Limit = 15 Minutes
+Rounds Reset Map = On
+Resolve Ties = Off
+Max Active Players = 16
+Lives Per Round = Unlimited
+Respawn Time = 5 Seconds
+Suicide Penalty = None
+Shield Type = Normal Shields
+Motion Sensor = On
+Active Camo = Off
+Extra Damage = Off
+Damage Resistance = Off
+Team Play = On
+Team Scoring = Sum
+Team Changing = On
+Friendly Fire = On
+Respawn Time Modifier = None
+Betrayal Penalty = 5 Seconds
+Force Even Teams = Off
+Vehicle Respawn Time = No Respawn
+Primary Light Vehicle = None
+Secondary Light Vehicle = None
+Primary Heavy Vehicle = None
+Banshee = Off
+Primary Turret = Map Default
+Secondary Turret = Map Default
+Starting Weapon = Random
+Secondary Weapon = Random
+Starting Grenades = On
+Weapons On Map = None
+Weapon Respawn Time = No Respawn
+Grenades On Map = On
+Overshields = On
+Active Camo On Map = On
+Score to Win Round = 3 Minutes
+Uncontested Hill = On
+Moving Hill = 3 Minutes
+Team Time Multiplier = Off
+Extra Damage on Hill = Off
+Damage Resistance on Hill = Off
+Active Camo on Hill = Off
+
+[custom variant]
+name=Team CTF Brawl
+game type=Capture the Flag
+Number Of Rounds = 1 Round
+Round Time Limit = 15 Minutes
+Rounds Reset Map = On
+Resolve Ties = Off
+Max Active Players = 16
+Lives Per Round = Unlimited
+Respawn Time = 5 Seconds
+Suicide Penalty = None
+Shield Type = Normal Shields
+Motion Sensor = On
+Active Camo = Off
+Extra Damage = Off
+Damage Resistance = Off
+Team Play = On
+Team Scoring = Sum
+Team Changing = On
+Friendly Fire = On
+Respawn Time Modifier = None
+Betrayal Penalty = 5 Seconds
+Force Even Teams = Off
+Vehicle Respawn Time = No Respawn
+Primary Light Vehicle = None
+Secondary Light Vehicle = None
+Primary Heavy Vehicle = None
+Banshee = Off
+Primary Turret = Map Default
+Secondary Turret = Map Default
+Starting Weapon = Random
+Secondary Weapon = Random
+Starting Grenades = On
+Weapons On Map = None
+Weapon Respawn Time = No Respawn
+Grenades On Map = On
+Overshields = On
+Active Camo On Map = On
+Score to Win Round = 3
+Flag Type = Flag Per Team
+Sudden Death = On
+Flag At Home To Score = On
+Flag Touch Return = Off
+Flag Reset Time = 60 Seconds
+Slow With Flag = On
+Flag Hit Damage = Massive
+Damage Resistance With Flag = On
+Active Camo With Flag = Off
+Vehicle Operation = Off
+Flag Indicator = Away From Home
+
+[custom variant]
+name=FFA S.W.A.T
+game type=Slayer
+Number Of Rounds = 1 Round
+Round Time Limit = 15 Minutes
+Rounds Reset Map = On
+Resolve Ties = Off
+Max Active Players = 16
+Lives Per Round = Unlimited
+Respawn Time = 5 Seconds
+Suicide Penalty = None
+Shield Type = No Shields
+Motion Sensor = Off
+Active Camo = Off
+Extra Damage = Off
+Damage Resistance = Off
+Team Play = Off
+Team Scoring = Sum
+Team Changing = On
+Friendly Fire = On
+Respawn Time Modifier = None
+Betrayal Penalty = 5 Seconds
+Force Even Teams = Off
+Vehicle Respawn Time = No Respawn
+Primary Light Vehicle = None
+Secondary Light Vehicle = None
+Primary Heavy Vehicle = None
+Banshee = Off
+Primary Turret = None
+Secondary Turret = None
+Starting Weapon = Battle Rifle
+Secondary Weapon = Magnum
+Starting Grenades = Off
+Weapons On Map = None
+Weapon Respawn Time = No Respawn
+Grenades On Map = Off
+Overshields = Off
+Active Camo On Map = Off
+Score to Win Round = 25
+Bonus Points = Off
+Suicide Point Loss = On
+Death Point Loss = Off
+
+[match]
+variant=FFA Brawl
+map=Lockout
+weight=100
+minimum players=1
+maximum players=16
+
+[match]
+variant=FFA Brawl
+map=Ascension
+weight=100
+minimum players=1
+maximum players=16
+
+[match]
+variant=FFA Brawl
+map=Midship
+weight=100
+minimum players=1
+maximum players=16
+
+[match]
+variant=FFA Brawl
+map=Ivory Tower
+weight=100
+minimum players=1
+maximum players=16
+
+[match]
+variant=FFA Brawl
+map=Beaver Creek
+weight=100
+minimum players=1
+maximum players=16
+
+[match]
+variant=FFA Brawl
+map=Colossus
+weight=100
+minimum players=1
+maximum players=16
+
+[match]
+variant=FFA Brawl
+map=Zanzibar
+weight=100
+minimum players=1
+maximum players=16
+
+[match]
+variant=FFA Brawl
+map=Foundation
+weight=100
+minimum players=1
+maximum players=16
+
+[match]
+variant=FFA Brawl
+map=Warlock
+weight=100
+minimum players=1
+maximum players=16
+
+[match]
+variant=FFA Brawl
+map=Sanctuary
+weight=100
+minimum players=1
+maximum players=16
+
+[match]
+variant=FFA Brawl
+map=Turf
+weight=100
+minimum players=1
+maximum players=16
+
+[match]
+variant=FFA Brawl
+map=Elongation
+weight=100
+minimum players=1
+maximum players=16
+
+[match]
+variant=FFA Brawl
+map=Gemini
+weight=100
+minimum players=1
+maximum players=16
+
+[match]
+variant=FFA Brawl
+map=Relic
+weight=100
+minimum players=1
+maximum players=16
+
+[match]
+variant=FFA Brawl
+map=Terminal
+weight=100
+minimum players=1
+maximum players=16
+
+[match]
+variant=FFA Brawl
+map=District
+weight=100
+minimum players=1
+maximum players=16
+
+[match]
+variant=FFA Brawl
+map=Uplift
+weight=100
+minimum players=1
+maximum players=16
+
+[match]
+variant=FFA BRs
+map=Lockout
+weight=80
+minimum players=1
+maximum players=16
+
+[match]
+variant=FFA BRs
+map=Ascension
+weight=80
+minimum players=1
+maximum players=16
+
+[match]
+variant=FFA BRs
+map=Midship
+weight=80
+minimum players=1
+maximum players=16
+
+[match]
+variant=FFA BRs
+map=Ivory Tower
+weight=80
+minimum players=1
+maximum players=16
+
+[match]
+variant=FFA BRs
+map=Beaver Creek
+weight=80
+minimum players=1
+maximum players=16
+
+[match]
+variant=FFA BRs
+map=Colossus
+weight=80
+minimum players=1
+maximum players=16
+
+[match]
+variant=FFA BRs
+map=Zanzibar
+weight=80
+minimum players=1
+maximum players=16
+
+[match]
+variant=FFA BRs
+map=Foundation
+weight=80
+minimum players=1
+maximum players=16
+
+[match]
+variant=FFA BRs
+map=Warlock
+weight=80
+minimum players=1
+maximum players=16
+
+[match]
+variant=FFA BRs
+map=Sanctuary
+weight=80
+minimum players=1
+maximum players=16
+
+[match]
+variant=FFA BRs
+map=Turf
+weight=80
+minimum players=1
+maximum players=16
+
+[match]
+variant=FFA BRs
+map=Elongation
+weight=80
+minimum players=1
+maximum players=16
+
+[match]
+variant=FFA BRs
+map=Gemini
+weight=80
+minimum players=1
+maximum players=16
+
+[match]
+variant=FFA BRs
+map=Relic
+weight=80
+minimum players=1
+maximum players=16
+
+[match]
+variant=FFA BRs
+map=Terminal
+weight=80
+minimum players=1
+maximum players=16
+
+[match]
+variant=FFA BRs
+map=District
+weight=80
+minimum players=1
+maximum players=16
+
+[match]
+variant=FFA BRs
+map=Uplift
+weight=80
+minimum players=1
+maximum players=16
+
+[match]
+variant=FFA S.W.A.T
+map=Lockout
+weight=70
+minimum players=1
+maximum players=16
+
+[match]
+variant=FFA S.W.A.T
+map=Ascension
+weight=70
+minimum players=1
+maximum players=16
+
+[match]
+variant=FFA S.W.A.T
+map=Midship
+weight=70
+minimum players=1
+maximum players=16
+
+[match]
+variant=FFA S.W.A.T
+map=Ivory Tower
+weight=70
+minimum players=1
+maximum players=16
+
+[match]
+variant=FFA S.W.A.T
+map=Beaver Creek
+weight=70
+minimum players=1
+maximum players=16
+
+[match]
+variant=FFA S.W.A.T
+map=Colossus
+weight=70
+minimum players=1
+maximum players=16
+
+[match]
+variant=FFA S.W.A.T
+map=Zanzibar
+weight=70
+minimum players=1
+maximum players=16
+
+[match]
+variant=FFA S.W.A.T
+map=Foundation
+weight=70
+minimum players=1
+maximum players=16
+
+[match]
+variant=FFA S.W.A.T
+map=Warlock
+weight=70
+minimum players=1
+maximum players=16
+
+[match]
+variant=FFA S.W.A.T
+map=Sanctuary
+weight=70
+minimum players=1
+maximum players=16
+
+[match]
+variant=FFA S.W.A.T
+map=Turf
+weight=70
+minimum players=1
+maximum players=16
+
+[match]
+variant=FFA S.W.A.T
+map=Elongation
+weight=70
+minimum players=1
+maximum players=16
+
+[match]
+variant=FFA S.W.A.T
+map=Gemini
+weight=70
+minimum players=1
+maximum players=16
+
+[match]
+variant=FFA S.W.A.T
+map=Relic
+weight=70
+minimum players=1
+maximum players=16
+
+[match]
+variant=FFA S.W.A.T
+map=Terminal
+weight=70
+minimum players=1
+maximum players=16
+
+[match]
+variant=FFA S.W.A.T
+map=District
+weight=70
+minimum players=1
+maximum players=16
+
+[match]
+variant=FFA S.W.A.T
+map=Uplift
+weight=70
+minimum players=1
+maximum players=16
+
+[match]
+variant=FFA S.W.A.T
+map=Lockout
+weight=60
+minimum players=1
+maximum players=16
+
+[match]
+variant=FFA S.W.A.T
+map=Ascension
+weight=60
+minimum players=1
+maximum players=16
+
+[match]
+variant=FFA S.W.A.T
+map=Midship
+weight=60
+minimum players=1
+maximum players=16
+
+[match]
+variant=FFA S.W.A.T
+map=Ivory Tower
+weight=60
+minimum players=1
+maximum players=16
+
+[match]
+variant=FFA S.W.A.T
+map=Beaver Creek
+weight=60
+minimum players=1
+maximum players=16
+
+[match]
+variant=FFA S.W.A.T
+map=Burial Mounds
+weight=60
+minimum players=1
+maximum players=16
+
+[match]
+variant=FFA S.W.A.T
+map=Colossus
+weight=60
+minimum players=1
+maximum players=16
+
+[match]
+variant=FFA S.W.A.T
+map=Zanzibar
+weight=60
+minimum players=1
+maximum players=16
+
+[match]
+variant=FFA S.W.A.T
+map=Foundation
+weight=60
+minimum players=1
+maximum players=16
+
+[match]
+variant=FFA S.W.A.T
+map=Warlock
+weight=60
+minimum players=1
+maximum players=16
+
+[match]
+variant=FFA S.W.A.T
+map=Sanctuary
+weight=60
+minimum players=1
+maximum players=16
+
+[match]
+variant=FFA S.W.A.T
+map=Turf
+weight=60
+minimum players=1
+maximum players=16
+
+[match]
+variant=FFA S.W.A.T
+map=Elongation
+weight=60
+minimum players=1
+maximum players=16
+
+[match]
+variant=FFA S.W.A.T
+map=Gemini
+weight=60
+minimum players=1
+maximum players=16
+
+[match]
+variant=FFA S.W.A.T
+map=Relic
+weight=60
+minimum players=1
+maximum players=16
+
+[match]
+variant=FFA S.W.A.T
+map=Terminal
+weight=60
+minimum players=1
+maximum players=16
+
+[match]
+variant=FFA S.W.A.T
+map=District
+weight=60
+minimum players=1
+maximum players=16
+
+[match]
+variant=FFA S.W.A.T
+map=Uplift
+weight=60
+minimum players=1
+maximum players=16
+
+[match]
+variant=Team KotH Brawl
+map=Lockout
+weight=40
+minimum players=1
+maximum players=16
+
+[match]
+variant=Team KotH Brawl
+map=Ascension
+weight=40
+minimum players=1
+maximum players=16
+
+[match]
+variant=Team KotH Brawl
+map=Midship
+weight=40
+minimum players=1
+maximum players=16
+
+[match]
+variant=Team KotH Brawl
+map=Ivory Tower
+weight=40
+minimum players=1
+maximum players=16
+
+[match]
+variant=Team KotH Brawl
+map=Beaver Creek
+weight=40
+minimum players=1
+maximum players=16
+
+[match]
+variant=Team KotH Brawl
+map=Colossus
+weight=40
+minimum players=1
+maximum players=16
+
+[match]
+variant=Team KotH Brawl
+map=Zanzibar
+weight=40
+minimum players=1
+maximum players=16
+
+[match]
+variant=Team KotH Brawl
+map=Foundation
+weight=40
+minimum players=1
+maximum players=16
+
+[match]
+variant=Team KotH Brawl
+map=Warlock
+weight=40
+minimum players=1
+maximum players=16
+
+[match]
+variant=Team KotH Brawl
+map=Sanctuary
+weight=40
+minimum players=1
+maximum players=16
+
+[match]
+variant=Team KotH Brawl
+map=Turf
+weight=40
+minimum players=1
+maximum players=16
+
+[match]
+variant=Team KotH Brawl
+map=Elongation
+weight=40
+minimum players=1
+maximum players=16
+
+[match]
+variant=Team KotH Brawl
+map=Gemini
+weight=40
+minimum players=1
+maximum players=16
+
+[match]
+variant=Team KotH Brawl
+map=Relic
+weight=40
+minimum players=1
+maximum players=16
+
+[match]
+variant=Team KotH Brawl
+map=Terminal
+weight=40
+minimum players=1
+maximum players=16
+
+[match]
+variant=Team KotH Brawl
+map=District
+weight=40
+minimum players=1
+maximum players=16
+
+[match]
+variant=Team KotH Brawl
+map=Uplift
+weight=40
+minimum players=1
+maximum players=16
+
+[match]
+variant=Team CTF Brawl
+map=Lockout
+weight=30
+minimum players=1
+maximum players=16
+
+[match]
+variant=Team CTF Brawl
+map=Ascension
+weight=30
+minimum players=1
+maximum players=16
+
+[match]
+variant=Team CTF Brawl
+map=Midship
+weight=30
+minimum players=1
+maximum players=16
+
+[match]
+variant=Team CTF Brawl
+map=Ivory Tower
+weight=30
+minimum players=1
+maximum players=16
+
+[match]
+variant=Team CTF Brawl
+map=Beaver Creek
+weight=30
+minimum players=1
+maximum players=16
+
+[match]
+variant=Team CTF Brawl
+map=Colossus
+weight=30
+minimum players=1
+maximum players=16
+
+[match]
+variant=Team CTF Brawl
+map=Zanzibar
+weight=30
+minimum players=1
+maximum players=16
+
+[match]
+variant=Team CTF Brawl
+map=Foundation
+weight=30
+minimum players=1
+maximum players=16
+
+[match]
+variant=Team CTF Brawl
+map=Warlock
+weight=30
+minimum players=1
+maximum players=16
+
+[match]
+variant=Team CTF Brawl
+map=Sanctuary
+weight=30
+minimum players=1
+maximum players=16
+
+[match]
+variant=Team CTF Brawl
+map=Turf
+weight=30
+minimum players=1
+maximum players=16
+
+[match]
+variant=Team CTF Brawl
+map=Elongation
+weight=30
+minimum players=1
+maximum players=16
+
+[match]
+variant=Team CTF Brawl
+map=Gemini
+weight=30
+minimum players=1
+maximum players=16
+
+[match]
+variant=Team CTF Brawl
+map=Relic
+weight=30
+minimum players=1
+maximum players=16
+
+[match]
+variant=Team CTF Brawl
+map=Terminal
+weight=30
+minimum players=1
+maximum players=16
+
+[match]
+variant=Team CTF Brawl
+map=District
+weight=30
+minimum players=1
+maximum players=16
+
+[match]
+variant=Team CTF Brawl
+map=Uplift
+weight=30
+minimum players=1
+maximum players=16
+
